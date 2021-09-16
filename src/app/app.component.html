@@ -1,0 +1,11 @@
+<div *ngIf="onLanding; else showTheme" class="landing">
+  <div class="glitch-box" [ngClass]="{'bomb-attack': playAnimation}" (click)="prepareForLanding()">
+    <h1 class="glitch" data-text="gusco">gusco</h1>
+  </div>
+</div>
+
+<ng-template #showTheme>
+  <div (click)="onLanding = true">
+    <p>ego</p>
+  </div>
+</ng-template>
